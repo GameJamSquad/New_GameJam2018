@@ -477,7 +477,7 @@ MonoBehaviour:
   turretPos: {fileID: 4853296563685682}
   firePoint: {fileID: 4450632519850814}
   bullet: {fileID: 1239692429269326, guid: 3ba65ea0ad3ce2444a3389eb72eeb90d, type: 2}
-  gunCooldown: 1
+  gunCooldown: 0.75
 --- !u!114 &114412323231871374
 MonoBehaviour:
   m_ObjectHideFlags: 1
