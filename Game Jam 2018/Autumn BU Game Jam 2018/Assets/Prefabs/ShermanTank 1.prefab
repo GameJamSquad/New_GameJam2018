@@ -247,7 +247,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1898218417680238}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 33.199345, y: 2.671806, z: -1.2010064}
+  m_LocalPosition: {x: 27.361912, y: 3.08, z: -12.210595}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4603331096572026}
@@ -271,7 +271,7 @@ MeshRenderer:
   m_Materials:
   - {fileID: 2100000, guid: c1546bcafd23a984e996c41502bdb0b6, type: 3}
   - {fileID: 2100002, guid: c1546bcafd23a984e996c41502bdb0b6, type: 3}
-  - {fileID: 2100004, guid: c1546bcafd23a984e996c41502bdb0b6, type: 3}
+  - {fileID: 2100000, guid: 723a6583442f11b438dee34c5dc9f85c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -305,7 +305,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: b9e53415076009542a01d022bdc9e17d, type: 3}
+  - {fileID: 2100000, guid: 723a6583442f11b438dee34c5dc9f85c, type: 2}
   - {fileID: 2100002, guid: b9e53415076009542a01d022bdc9e17d, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -340,7 +340,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 4874bc895eb14d149954267f13715ef3, type: 3}
+  - {fileID: 2100000, guid: 723a6583442f11b438dee34c5dc9f85c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -483,8 +483,8 @@ MonoBehaviour:
   - {fileID: 2100000, guid: dae30b1940cd87e44b1e6db71c15d9c6, type: 2}
   - {fileID: 2100000, guid: 043b791a795c8bc4f9b294e31dd2aa3f, type: 2}
   - {fileID: 2100000, guid: af18f721f2f95224fb10519d38b38d41, type: 2}
-  health: 5
-  maxHealth: 5
+  health: 3
+  maxHealth: 3
   score: 0
   rb: {fileID: 54011448551708916}
   turretRb: {fileID: 54784322713516162}
@@ -494,7 +494,7 @@ MonoBehaviour:
   turretPos: {fileID: 4609442595468224}
   firePoint: {fileID: 4409019642626608}
   bullet: {fileID: 1239692429269326, guid: 09271639cb080d2489a3ede2099889e8, type: 2}
-  gunCooldown: 1
+  gunCooldown: 0.75
 --- !u!114 &114448709945261824
 MonoBehaviour:
   m_ObjectHideFlags: 1

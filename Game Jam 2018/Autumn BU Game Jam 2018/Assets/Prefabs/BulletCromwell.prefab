@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 198799965931907608}
   - component: {fileID: 199637246992687306}
   m_Layer: 0
-  m_Name: Bullet
+  m_Name: BulletCromwell
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -275,7 +275,7 @@ MonoBehaviour:
   aSource: {fileID: 82398988921046246}
   destroyBulletSound: {fileID: 8300000, guid: 8ae1e9f174e71824c9cb9916d9612109, type: 3}
   rb: {fileID: 54228579311265372}
-  bulletForce: 240
+  bulletForce: 300
   damage: 1
   tSource: {fileID: 0}
 --- !u!198 &198799965931907608

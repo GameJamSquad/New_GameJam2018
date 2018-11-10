@@ -150,7 +150,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1010466633036372}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 30.034727, y: 1.9244425, z: 1.2953243}
+  m_LocalPosition: {x: 32.972385, y: 9.327957, z: -11.039917}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4686646643938908}
@@ -268,7 +268,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 2178ebd5b5b19b84f82276b39ebc0d09, type: 3}
+  - {fileID: 2100000, guid: 723a6583442f11b438dee34c5dc9f85c, type: 2}
   - {fileID: 2100002, guid: 2178ebd5b5b19b84f82276b39ebc0d09, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -303,7 +303,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: f6a37b62e0d34a8439eba7619f01f29a, type: 3}
+  - {fileID: 2100000, guid: 723a6583442f11b438dee34c5dc9f85c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -466,17 +466,17 @@ MonoBehaviour:
   - {fileID: 2100000, guid: dae30b1940cd87e44b1e6db71c15d9c6, type: 2}
   - {fileID: 2100000, guid: 043b791a795c8bc4f9b294e31dd2aa3f, type: 2}
   - {fileID: 2100000, guid: af18f721f2f95224fb10519d38b38d41, type: 2}
-  health: 5
-  maxHealth: 5
+  health: 0
+  maxHealth: 3
   score: 0
   rb: {fileID: 54258259286549394}
   turretRb: {fileID: 54319080276032446}
-  movementForce: 300
+  movementForce: 350
   rotationSpeed: 50
-  turretRotationSpeed: 100
+  turretRotationSpeed: 150
   turretPos: {fileID: 4853296563685682}
   firePoint: {fileID: 4450632519850814}
-  bullet: {fileID: 1239692429269326, guid: 09271639cb080d2489a3ede2099889e8, type: 2}
+  bullet: {fileID: 1239692429269326, guid: 3ba65ea0ad3ce2444a3389eb72eeb90d, type: 2}
   gunCooldown: 1
 --- !u!114 &114412323231871374
 MonoBehaviour:

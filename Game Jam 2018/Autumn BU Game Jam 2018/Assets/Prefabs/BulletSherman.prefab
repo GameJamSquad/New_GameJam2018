@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 198799965931907608}
   - component: {fileID: 199637246992687306}
   m_Layer: 0
-  m_Name: PanzerBullet
+  m_Name: BulletSherman
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -57,7 +57,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1239692429269326}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 15.48, y: 3.81, z: -11.76}
+  m_LocalPosition: {x: -28.058125, y: 4.78, z: 15.269157}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4254332252087272}
@@ -143,8 +143,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 3.6290808}
-  m_Center: {x: 0, y: -3.4700932e-15, z: 0.744186}
+  m_Size: {x: 1, y: 1, z: 4.239807}
+  m_Center: {x: 0, y: 6.4572117e-16, z: 0}
 --- !u!82 &82398988921046246
 AudioSource:
   m_ObjectHideFlags: 1
@@ -275,8 +275,8 @@ MonoBehaviour:
   aSource: {fileID: 82398988921046246}
   destroyBulletSound: {fileID: 8300000, guid: 8ae1e9f174e71824c9cb9916d9612109, type: 3}
   rb: {fileID: 54228579311265372}
-  bulletForce: 240
-  damage: 2
+  bulletForce: 360
+  damage: 1
   tSource: {fileID: 0}
 --- !u!198 &198799965931907608
 ParticleSystem:
@@ -338,7 +338,7 @@ ParticleSystem:
   moveWithTransform: 1
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: -1274343737
+  randomSeed: 913470530
   InitialModule:
     serializedVersion: 3
     enabled: 1

@@ -8,7 +8,7 @@ public class StartScreen : MonoBehaviour
 
 	void Update ()
     {
-        if (Input.GetButtonDown("AButton_P1") || Input.GetButtonDown("AButton_P2") || Input.GetButtonDown("AButton_P3") || Input.GetButtonDown("AButton_P4"))
+        if (Input.GetButton("AButton_P1") || Input.GetButton("AButton_P2") || Input.GetButton("AButton_P3") || Input.GetButton("AButton_P4"))
         {
             LoadRandomLevel();
         }
