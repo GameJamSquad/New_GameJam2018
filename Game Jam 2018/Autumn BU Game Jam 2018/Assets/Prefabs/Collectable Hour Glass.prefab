@@ -186,5 +186,5 @@ MonoBehaviour:
   shell: {fileID: 23438005352514526}
   gManager: {fileID: 0}
   adjustAmount: -0.5
-  cooldownTime: 5
+  cooldownTime: 20
   isSlowDown: 1

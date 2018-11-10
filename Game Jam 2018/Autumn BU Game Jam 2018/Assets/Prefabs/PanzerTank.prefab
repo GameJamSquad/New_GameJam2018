@@ -478,8 +478,8 @@ MonoBehaviour:
   - {fileID: 2100000, guid: dae30b1940cd87e44b1e6db71c15d9c6, type: 2}
   - {fileID: 2100000, guid: 043b791a795c8bc4f9b294e31dd2aa3f, type: 2}
   - {fileID: 2100000, guid: af18f721f2f95224fb10519d38b38d41, type: 2}
-  health: 5
-  maxHealth: 5
+  health: 4
+  maxHealth: 4
   score: 0
   rb: {fileID: 54287485723147398}
   turretRb: {fileID: 54506353591115122}
