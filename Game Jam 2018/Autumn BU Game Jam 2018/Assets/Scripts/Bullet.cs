@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
+    public AudioSource aSource;
+    public AudioClip destroyBulletSound;
+
     public Rigidbody rb;
     public float bulletForce = 16f;
 
@@ -29,6 +32,7 @@ public class Bullet : MonoBehaviour
 
     void ExplodeBullet()
     {
+        aSource.PlayOneShot(destroyBulletSound);
         Destroy(this.gameObject);
     }
 
