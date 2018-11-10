@@ -182,7 +182,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mRenderer: {fileID: 23338044788838242}
-  mCollider: {fileID: 0}
+  mCollider: {fileID: 65531755116562176}
+  shell: {fileID: 23438005352514526}
   gManager: {fileID: 0}
   adjustAmount: -0.5
   cooldownTime: 5

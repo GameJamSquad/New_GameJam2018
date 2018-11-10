@@ -32,7 +32,6 @@ public class Bullet : MonoBehaviour
 
     void ExplodeBullet()
     {
-        aSource.PlayOneShot(destroyBulletSound);
         Destroy(this.gameObject);
     }
 
@@ -47,6 +46,8 @@ public class Bullet : MonoBehaviour
                 tSource.AdjustScore();
             }
 
+            aSource.PlayOneShot(destroyBulletSound);
+
             ExplodeBullet();
         }
         else if(other.gameObject.tag == "Turret")
@@ -59,10 +60,13 @@ public class Bullet : MonoBehaviour
                 tSource.AdjustScore();
             }
 
+            aSource.PlayOneShot(destroyBulletSound);
+
             ExplodeBullet();
         }
         else
         {
+            aSource.PlayOneShot(destroyBulletSound);
             ExplodeBullet();
         }
     }

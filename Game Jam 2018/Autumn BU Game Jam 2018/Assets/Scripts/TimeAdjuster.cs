@@ -6,7 +6,9 @@ public class TimeAdjuster : MonoBehaviour
 {
 
     public MeshRenderer mRenderer;
-    public MeshCollider mCollider;
+    public BoxCollider mCollider;
+    public MeshRenderer shell;
+
     public GameManager gManager;
 
     public float adjustAmount;
@@ -29,6 +31,7 @@ public class TimeAdjuster : MonoBehaviour
         yield return new WaitForSeconds(cooldownTime);
         mRenderer.enabled = true;
         mCollider.enabled = true;
+        shell.enabled = true;
     }
 
     private void OnTriggerEnter(Collider other)
@@ -40,6 +43,7 @@ public class TimeAdjuster : MonoBehaviour
                 gManager.AdjustTimeSpeed(adjustAmount);
                 mRenderer.enabled = false;
                 mCollider.enabled = false;
+                shell.enabled = false;
 
                 if (isSlowDown)
                 {
