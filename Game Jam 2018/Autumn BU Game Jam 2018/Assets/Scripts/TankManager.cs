@@ -11,6 +11,11 @@ public class TankManager : MonoBehaviour
     public string fireGun = "Fire1_P1";
     public string turretRotation = "TurretRotation_P1";
 
+    public string horizontalPS4 = "HorizontalPS4_P1";
+    public string verticalPS4 = "HorizontalPS4_P1";
+    public string fireGunPS4 = "HorizontalPS4_P1";
+    public string turretRotationPS4 = "HorizontalPS4_P1";
+
     public MeshRenderer bodyRenderer, turretRenderer, trackRenderer;
     public MeshCollider bodyCol, turretCol;
 
@@ -45,6 +50,8 @@ public class TankManager : MonoBehaviour
         fireGun = "Fire1_P" + playerNumber;
         turretRotation = "TurretRotation_P" + playerNumber;
 
+        horizontalPS4 = "HorizontalPS4_P" + playerNumber;
+
         Material[] turretMats = turretRenderer.materials;
         turretMats[1] = pMaterials[playerNumber - 1];
 
@@ -56,11 +63,6 @@ public class TankManager : MonoBehaviour
         if(health <= 0)
         {
             ExplodeTank();
-        }
-
-        if (Input.GetKeyDown(KeyCode.L))
-        {
-            AdjustScore();
         }
 	}
 
