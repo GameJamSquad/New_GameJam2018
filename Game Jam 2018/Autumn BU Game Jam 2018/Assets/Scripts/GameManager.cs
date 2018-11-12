@@ -83,13 +83,55 @@ public class GameManager : MonoBehaviour
             }
         }
 
-        if (playerLockIns[0] && playerLockIns[1] && playerLockIns[2] && playerLockIns[3])
+        if (numOfPlayers == 1)
         {
-            if (lobbyOpen)
+            if (playerLockIns[0])
             {
-                if (Input.GetButtonDown("AButton_P1") || Input.GetButtonDown("AButton_P2") || Input.GetButtonDown("AButton_P3") || Input.GetButtonDown("AButton_P4"))
+                if (lobbyOpen)
                 {
-                    StartGame();
+                    if (Input.GetButtonDown("AButton_P1") || Input.GetButtonDown("AButton_P2"))
+                    {
+                        StartGame();
+                    }
+                }
+            }
+        }
+        else if (numOfPlayers == 2)
+        {
+            if (playerLockIns[0] && playerLockIns[1])
+            {
+                if (lobbyOpen)
+                {
+                    if (Input.GetButtonDown("AButton_P1") || Input.GetButtonDown("AButton_P2"))
+                    {
+                        StartGame();
+                    }
+                }
+            }
+        }
+        else if(numOfPlayers == 3)
+        {
+            if (playerLockIns[0] && playerLockIns[1] && playerLockIns[2])
+            {
+                if (lobbyOpen)
+                {
+                    if (Input.GetButtonDown("AButton_P1") || Input.GetButtonDown("AButton_P2"))
+                    {
+                        StartGame();
+                    }
+                }
+            }
+        }
+        else
+        {
+            if (playerLockIns[0] && playerLockIns[1] && playerLockIns[2] && playerLockIns[3])
+            {
+                if (lobbyOpen)
+                {
+                    if (Input.GetButtonDown("AButton_P1") || Input.GetButtonDown("AButton_P2") || Input.GetButtonDown("AButton_P3") || Input.GetButtonDown("AButton_P4"))
+                    {
+                        StartGame();
+                    }
                 }
             }
         }
@@ -489,21 +531,33 @@ public class GameManager : MonoBehaviour
 
     void CheckPlayerInput()
     {
-        if (Input.GetButtonDown("AButton_P1"))
+        if (!hasFirstPlayer)
         {
-            AddFirstPlayer();
+            if (Input.GetButtonDown("AButton_P1"))
+            {
+                AddFirstPlayer();
+            }
         }
-        if (Input.GetButtonDown("AButton_P2"))
+        if (!hasSecondPlayer)
         {
-            AddSecondPlayer();
+            if (Input.GetButtonDown("AButton_P2"))
+            {
+                AddSecondPlayer();
+            }
         }
-        if (Input.GetButtonDown("AButton_P3"))
+        if (!hasThirdPlayer)
         {
-            AddThirdPlayer();
+            if (Input.GetButtonDown("AButton_P3"))
+            {
+                AddThirdPlayer();
+            }
         }
-        if (Input.GetButtonDown("AButton_P4"))
+        if (!hasFourthPlayer)
         {
-            AddFourthPlayer();
+            if (Input.GetButtonDown("AButton_P4"))
+            {
+                AddFourthPlayer();
+            }
         }
     }
 
